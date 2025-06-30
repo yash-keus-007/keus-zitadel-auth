@@ -1,0 +1,30 @@
+{
+  "roles": {
+    "user": [
+      "profile:view",
+      "document:read"
+    ],
+    "system_manager": [
+      "dashboard:read|update",
+      "system:view|restart",
+      "device:reboot|read",
+      "logs:view"
+    ],
+    "admin": [
+      "dashboard:read|write|update|delete",
+      "room:read|create|update|delete",
+      "user:create|read|update|delete",
+      "role:assign",
+      "settings:edit"
+    ],
+    "site_manager": [
+      "site:view|edit",
+      "device:read|reboot"
+    ],
+    "site_admin": [
+      "site:view|delete|edit",
+      "device:read|reboot",
+      "logs:view"
+    ]
+  }
+}
